@@ -1,8 +1,11 @@
 .eggs
 .tox
-dist
+dist/
 *.egg-info
 *.so
-__pycache__
+__pycache__/
 *.pyc
 *.pyo
+build/
+*.whl
+*.tar.gz
