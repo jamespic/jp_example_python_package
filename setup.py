@@ -16,6 +16,11 @@ setup(
     package_dir={'': 'src'},
     include_package_data=True,
     packages=find_packages('src'),
+    entry_points={
+        'console_scripts': [
+            'hello-world = jp_example_python_package:hello'
+        ]
+    },
     ext_modules=[
         Extension('jp_example_python_package.native',
                   ['src/jp_example_python_package/native.pyx'])
